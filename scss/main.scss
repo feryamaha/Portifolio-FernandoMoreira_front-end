@@ -11,8 +11,12 @@
 
 .s-hero-intro {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
     position: relative;
+
+    @media screen and (max-width: 780px) {
+        margin-top: -90px;
+    }
 
     #img-brush {
         position: absolute;
@@ -46,6 +50,10 @@
             position: relative;
             margin-bottom: 200px;
             opacity: .9;
+
+            @media screen and (max-width: 780px) {
+                margin-bottom: 50px;
+            }
         }
 
         #code-ilustration {
@@ -289,6 +297,10 @@
             display: flex;
             gap: 100px;
             align-items: flex-end;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
 
             .proj-card__image {
                 width: 540px;
