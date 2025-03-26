@@ -1,0 +1,134 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'typograph';
+@import 'grid';
+@import 'header';
+@import 'footer';
+@import 'components';
+
+.s-hero-proj {
+    width: 100%;
+    height: 1280px;
+    position: relative;
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .header-proj {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            span {
+                font-size: 24px;
+                color: $color-primary;
+            }
+
+            p {
+                font-size: 24px;
+                font-family: $font-modern-dos;
+                padding-left: 0;
+                font-weight: 600;
+            }
+        }
+
+        .wrapper__cards {
+
+            width: 100%;
+            height: max-content;
+            padding: 88px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 48px;
+            justify-content: center;
+
+            .proj-card {
+                width: 300px;
+                height: 452px;
+                background: $background-cards;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid #fff;
+                border-image: initial; // Define um estado inicial para a borda
+                box-sizing: border-box; // Garante que a borda não aumente o tamanho do card
+
+                p {
+                    color: $color-secondary;
+                    font-size: 16px;
+                }
+
+                .proj-card__image {
+                    position: relative;
+                    width: 100%;
+                    height: 210px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: 100%;
+                    }
+                }
+
+                .proj-card__title {
+                    display: flex;
+                    padding: 8px;
+                    align-items: flex-start;
+                    border-top: 1px solid $color-secondary;
+                    border-bottom: 1px solid $color-secondary;
+                }
+
+                .proj-card__description {
+                    display: flex;
+                    padding: 16px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    align-self: stretch;
+
+                    .title-project {
+                        font-size: 24px;
+                        color: $color-primary;
+                        font-weight: 900;
+                    }
+
+                    .auclan-design {
+                        color: $color-tertiary;
+                        border-bottom: 1px solid $color-secondary;
+                    }
+
+                    .auclan-design:hover {
+                        color: $color-tertiary;
+                        opacity: .8;
+                        border-bottom: 1px solid $color-primary;
+                    }
+
+                    .btn-card {
+                        text-align: center;
+                        padding: 3%;
+                        border-radius: 3px;
+                        background: $background-button;
+                        color: $color-secondary;
+                        transition: transform 0.6s ease-in-out, background 0.8s ease-in-out, color 0.8s ease-in-out;
+                        font-weight: 100;
+                        font-family: $font-modern-dos ;
+                    }
+
+                    .btn-card:hover {
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+
+        #rtg-right-project {
+            position: absolute;
+            right: -50px;
+        }
+    }
+}

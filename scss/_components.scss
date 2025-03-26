@@ -1,0 +1,67 @@
+/* .s-hero-language-switcher {
+    padding-top: 100px;
+    height: auto;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+
+        .language-switcher__wrapper {
+            width: 280px;
+            height: max-content;
+            display: flex; // Mantém flex, mas muda a direção
+            flex-direction: column; // Coloca o texto acima das bandeiras
+            align-items: flex-start; // Alinha os itens à esquerda
+            gap: 12px;
+            padding: 1%;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $color-primary;
+
+            .language-switcher__label {
+                display: flex;
+                padding: 0px 4px;
+                align-items: center;
+                gap: 10px;
+
+                p {
+                    color: var(--Color-Neutral-600, #455160);
+                    font-family: Inter;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%; // Mantém o texto sem espaço extra
+                    letter-spacing: -0.18px;
+                }
+            }
+
+            .language-switcher__options {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                justify-content: flex-start; // Alinha as bandeiras à esquerda
+                position: relative;
+
+                .language-switcher__option {
+                    img {
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            transform: translateY(2px);
+                        }
+                    }
+                }
+            }
+
+            .language-switcher__icon {
+                width: 60px;
+                height: 80px;
+                position: absolute;
+                right: -80px;
+                bottom: 0;
+                transition: transform 0.1s ease; // 
+            }
+        }
+
+    }
+
+} */

@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'typograph';
+@import 'grid';
+@import 'header';
+@import 'footer';
+@import 'components';
+
+
+.popUP-proj-mlx {
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 800px;
+    height: auto;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    display: none;
+}

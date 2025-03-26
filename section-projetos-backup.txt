@@ -1,0 +1,281 @@
+  <section class="s-hero-projects">
+    <div class="box-headline">
+      <img id="headline" src="./img/Line.svg" alt="line">
+      <p><span class="hdr-span">#</span>PROJETOS</p>
+    </div>
+
+    <div class="container">
+      <div class="wrapper__cards">
+        <!--projeto MLX CAPITAL_AUCLAN DESIGN-->
+        <div data-aos="fade-up" data-aos-duration="3000" class="proj-card">
+          <div class="proj-card__image">
+            <img src="./img/image-project-mlx.webp" alt="image-MLX" />
+          </div>
+          <div class="proj-card__title">
+            <p>HTML, CSS e Javascript</p>
+          </div>
+          <div class="proj-card__description">
+            <p class="title-project">MLX CAPITAL</p>
+            <p>
+              Projeto freelancer frontend feito para a empresa
+              <a class="auclan-design" href="https://auclandesign.com/" target="_blank" rel="noopener noreferrer">Auclan
+                Design</a>
+            </p>
+            <a class="btn-card" href="https://feryamaha.github.io/MLX-2025/" target="_blank"
+              rel="noopener noreferrer">Frontend do projeto</a>
+          </div>
+
+          <!--           <div class="pup-proj-mlx">
+            <h2>MLX Capital</h2>
+            <h3>Projeto Frontend - Auclan Design</h3>
+            <p>Desenvolvimento frontend realizado como prestador de serviços para a <a class="auclan-design"
+                href="https://auclandesign.com/" target="_blank" rel="noopener noreferrer">Auclan Design</a>,
+              responsável pelo design completo do projeto.</p>
+            <p>Tecnologias utilizadas: HTML, CSS e JavaScript.</p>
+
+
+            <p>Para o website da MLX Capital, construí uma estrutura semântica em HTML5, organizada em seções como
+              <code><header></code>, <code><section></code> e <code><footer></code>, garantindo acessibilidade e
+              clareza. Utilizei elementos como <code><nav></code> para o menu e <code><img></code> com atributos
+              <code>alt</code> para imagens, promovendo boas práticas de SEO.
+            </p>
+
+
+            <p>No CSS, implementei um sistema modular com arquivos separados (ex.: <code>main.css</code>,
+              <code>components.css</code>, <code>grid.css</code>), usando variáveis em <code>:root</code> para cores
+              (como <code>--black-700</code>) e tamanhos, além de um grid responsivo com <code>display: grid</code> para
+              layouts como os cards de serviços. A estilização incluiu animações sutis com <code>transition</code> e
+              efeitos de hover, como em <code>.service-card:hover</code>.
+            </p>
+
+
+            <p>Em JavaScript, criei um carrossel contínuo (scroller) manipulando o DOM com
+              <code>document.querySelectorAll</code> e <code>createElement</code>, organizando dados em um array de
+              objetos e aplicando animações fluidas via <code>requestAnimationFrame</code> e <code>translateX</code>
+              para um efeito de rolagem infinita. Também desenvolvi um menu responsivo com <code>addEventListener</code>
+              para capturar cliques, ajustando classes com <code>classList</code> e estilos via
+              <code>style.display</code>. Essas soluções demonstram minha habilidade em integrar HTML semântico, CSS
+              modular e JavaScript interativo para criar interfaces modernas e funcionais.
+            </p>
+          </div> -->
+        </div>
+        <!--projeto APLHA_AUCLAN DESIGN-->
+        <div data-aos="fade-up" data-aos-duration="3000" class="proj-card">
+          <div class="proj-card__image">
+            <img src="./img/image-project-alpha.webp" alt="image-autodataF" />
+          </div>
+          <div class="proj-card__title">
+            <p>HTML, CSS e Javascript</p>
+          </div>
+          <div class="proj-card__description">
+            <p class="title-project">ALPHA</p>
+            <p>
+              Projeto freelancer frontend feito para a empresa
+              <a class="auclan-design" href="https://auclandesign.com/" target="_blank" rel="noopener noreferrer">Auclan
+                Design</a>
+            </p>
+            <a class="btn-card" href="https://feryamaha.github.io/ALPHA-2025/" target="_blank"
+              rel="noopener noreferrer">Frontend do projeto</a>
+          </div>
+        </div>
+        <!--PROJETO VEGA_AUCLAN DESIGN-->
+        <div data-aos="fade-up" data-aos-duration="3000" class="proj-card">
+          <div class="proj-card__image">
+            <img src="./img/image-project-vega.webp" alt="image-autodataF" />
+          </div>
+          <div class="proj-card__title">
+            <p>HTML, SCSS e Javascript</p>
+          </div>
+          <div class="proj-card__description">
+            <p class="title-project">VEGA</p>
+            <p>
+              Projeto freelancer frontend feito para a empresa
+              <a class="auclan-design" href="https://auclandesign.com/" target="_blank" rel="noopener noreferrer">Auclan
+                Design</a>
+            </p>
+            <a class="btn-card" href="https://mayconmartins01.github.io/websitevega/" target="_blank"
+              rel="noopener noreferrer">Frontend do projeto</a>
+          </div>
+        </div>
+        <!--PROJETO AUTODATAF-->
+        <div data-aos="fade-up" data-aos-duration="3000" class="proj-card">
+          <div class="proj-card__image">
+            <img src="./img/image-project-autodataF.webp" alt="image-autodataF" />
+          </div>
+          <div class="proj-card__title">
+            <p>React, Node.js e PostgreeSQL</p>
+          </div>
+          <div class="proj-card__description">
+            <p class="title-project">AUTODATAF</p>
+            <p>Projeto pessoal plataforma cursos free do Youtube</p>
+            <a class="btn-card" href="https://autodata-f.vercel.app/" target="_blank" rel="noopener noreferrer">Frontend
+              do projeto</a>
+          </div>
+        </div>
+      </div>
+      <img id="rtg-right-project" src="./img/rectangle-right.svg" alt="retanggle" />
+
+      <div id="works" class="proj-header">
+        <a href="#" target="_blank" class="proj-view-all">View all ~~></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  .s-hero-projects {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background: #fff;
+
+    .box-headline {
+        width: 2px;
+        height: 100px;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: #000;
+            writing-mode: vertical-lr;
+            -webkit-text-orientation: upright;
+            text-orientation: upright;
+
+        }
+
+        p,
+        span {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .proj-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .proj-view-all {
+                font-size: 16px;
+                color: $color-primary;
+                display: inline-block;
+                transform: translateX(0);
+            }
+
+            .wrapper-proj {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+        }
+
+        .wrapper__cards {
+
+            width: 100%;
+            height: 1024px;
+            padding: 88px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+            .proj-card {
+                width: 300px;
+                height: 452px;
+                background: $background-cards;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid #fff;
+                border-image: initial; // Define um estado inicial para a borda
+                box-sizing: border-box; // Garante que a borda não aumente o tamanho do card
+                /* border: 5px solid red; */
+
+
+                p {
+                    color: $color-secondary;
+                    font-size: 16px;
+                }
+
+                .proj-card__image {
+                    position: relative;
+                    width: 100%;
+                    height: 200px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: 100%;
+                    }
+                }
+
+                .proj-card__title {
+                    display: flex;
+                    padding: 8px;
+                    align-items: flex-start;
+                    border-top: 1px solid $color-secondary;
+                    border-bottom: 1px solid $color-secondary;
+                }
+
+                .proj-card__description {
+                    display: flex;
+                    padding: 16px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    align-self: stretch;
+
+                    .title-project {
+                        font-size: 24px;
+                        color: $color-primary;
+                        font-weight: 900;
+                    }
+
+                    .auclan-design {
+                        color: $color-tertiary;
+                        border-bottom: 1px solid $color-secondary;
+                    }
+
+                    .auclan-design:hover {
+                        color: $color-tertiary;
+                        opacity: .8;
+                        border-bottom: 1px solid $color-primary;
+                    }
+
+                    .btn-card {
+                        text-align: center;
+                        padding: 3%;
+                        border-radius: 3px;
+                        background: $background-button;
+                        color: $color-secondary;
+                        transition: transform 0.6s ease-in-out, background 0.8s ease-in-out, color 0.8s ease-in-out;
+                        font-weight: 100;
+                        font-family: $font-modern-dos ;
+                    }
+
+                    .btn-card:hover {
+                        transform: translateY(-2px);
+                    }
+
+                }
+            }
+        }
+
+        #rtg-right-project {
+            position: absolute;
+            right: -50px;
+        }
+    }
+}

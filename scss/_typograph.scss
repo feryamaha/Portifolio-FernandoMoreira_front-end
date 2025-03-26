@@ -1,0 +1,79 @@
+$font-family: 'Fira Code', monospace;
+$font-primary: 'Fira Code', monospace;
+$font-modern-dos: 'Modern DOS', monospace;
+$color-text: $color-tertiary;
+$line-height: 1.5;
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-family;
+    font-style: normal;
+    color: $color-tertiary;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    /* 57.6px */
+    letter-spacing: -0.72px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    /* 48px */
+    letter-spacing: -0.6px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    /* 41.6px */
+    letter-spacing: -0.48px;
+}
+
+h3.thin {
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    /* 31.2px */
+    letter-spacing: -0.36px;
+}
+
+h4.bold {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+p {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-style: normal;
+}
+
+
+span {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-style: normal;
+}
+
+a {
+    color: $color-secondary; // Usando o roxo vibrante para links
+    font-family: $font-primary;
+    font-style: normal;
+    font-size: 16px; // Padrão para links, menor que h4
+    font-weight: 400; // Peso leve, como parágrafos
+    line-height: $line-height; // Mesma altura de linha de outros elementos
+    letter-spacing: -0.24px; // Proporcional aos outros
+}
