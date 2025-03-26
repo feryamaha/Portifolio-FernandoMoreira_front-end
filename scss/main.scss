@@ -23,7 +23,11 @@
         right: 0;
         bottom: 0;
         width: 100%;
-        height: 80px;
+        /*  height: 80px; */
+        @media screen and (max-width: 780px) {
+            bottom: -5px;
+        }
+
     }
 
     #logo-brush {
@@ -34,6 +38,8 @@
         width: 100%;
         height: auto;
         opacity: .8;
+
+
     }
 
     .container {
@@ -582,6 +588,7 @@
         left: 0;
         position: sticky;
         opacity: .55;
+        
     }
 
     #img-brush-proj {
@@ -591,6 +598,10 @@
         left: 0;
         transform: rotate(180deg);
         z-index: 3;
+        
+        @media screen and (max-width: 560px) {
+            top: 0;
+        }
     }
 
     .container {
@@ -699,6 +710,11 @@
                 padding: 1%;
                 border-radius: 5px;
                 background: $background-cards;
+
+                @media screen and (max-width: 560px) {
+                    width: 100%;
+
+                }
 
                 p {
                     font-size: 16px;
@@ -931,13 +947,16 @@
                     width: 100%;
                     height: 100%;
                     transition: transform 0.9s ease-in-out;
-
-
                 }
 
                 @media screen and (max-width: 780px) {
                     width: 80%;
                     height: 465px;
+                }
+
+                @media screen and (max-width: 560px) {
+                    width: 100%;
+                    height: 365px;
                 }
 
                 .image-logo-about {
