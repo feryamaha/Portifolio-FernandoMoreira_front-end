@@ -93,149 +93,6 @@ socialIcons.forEach((icon, index) => {
 console.log("Elementos encontrados:", socialIcons);
 
 
-// CLONE CARDS // 
-// Espera o DOM carregar completamente
-/* document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona o contêiner dos cards e o primeiro card como template
-    const wrapperCards = document.querySelector('.wrapper__cards');
-    const templateCard = document.querySelector('.proj-card');
-
-    if (!wrapperCards || !templateCard) {
-        console.error('Contêiner .wrapper__cards ou template .proj-card não encontrado!');
-        return;
-    }
-
-    // Array com dados dos cards, agora incluindo os links
-    const cardData = [
-        {
-            image: {
-                src: './img/image-project-portifolio.webp',
-                alt: 'image-portifolio'
-            },
-            title: 'HTML, SASS e Javascript',
-            description: {
-                title: 'Portifólio',
-                text: 'Meu portifólio_Fernando Moreira',
-                buttonText: 'Ver o projeto',
-                link: 'https://feryamaha.github.io/FM-FRONT-END---PORTIFOLIO-main/'
-            }
-        },
-        {
-            image: {
-                src: './img/image-project-alpha.webp',
-                alt: 'image-alpha'
-            },
-            title: 'HTML, SASS e Javascript',
-            description: {
-                title: 'Alpha',
-                text: 'Projeto front-end desenvolvido para a Auclan Design',
-                buttonText: 'Ver o projeto',
-                link: 'https://feryamaha.github.io/ALPHA-2025/'
-            }
-        },
-        {
-            image: {
-                src: './img/image-project-mlx.webp',
-                alt: 'image-mlx'
-            },
-            title: 'HTML, SASS e Javascript',
-            description: {
-                title: 'MLX CAPITAL',
-                text: 'Projeto front-end desenvolvido para a Auclan Design',
-                buttonText: 'Ver o projeto',
-                link: 'https://feryamaha.github.io/MLX-2025/'
-            }
-        },
-        {
-            image: {
-                src: './img/image-project-autodataF.webp',
-                alt: 'image-autodataF'
-            },
-            title: 'React, Node.js e PostgreSQL',
-            description: {
-                title: 'AutodataF',
-                text: 'Plataforma de cursos Free do Youtube',
-                buttonText: 'Ver o projeto',
-                link: 'https://autodata-f.vercel.app/'
-            }
-        }
-    ];
-
-    // Injeta CSS dinamicamente para o hover do link Auclan Design
-    const styleSheet = document.createElement('style');
-    styleSheet.textContent = `
-        .auclan-link:hover {
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
-        }
-    `;
-    document.head.appendChild(styleSheet);
-
-    // Função para criar e preencher um card clonado
-    function createCard(data) {
-        // Clona o template
-        const newCard = templateCard.cloneNode(true);
-
-        // Seleciona os elementos dentro do card clonado
-        const cardImage = newCard.querySelector('.proj-card__image img');
-        const cardTitle = newCard.querySelector('.proj-card__title p');
-        const descriptionTitle = newCard.querySelector('.proj-card__description .title-project');
-        const descriptionText = newCard.querySelector('.proj-card__description p:nth-child(2)');
-        const button = newCard.querySelector('.proj-card__description button');
-
-        // Preenche os dados
-        cardImage.src = data.image.src;
-        cardImage.alt = data.image.alt;
-        cardTitle.textContent = data.title;
-        descriptionTitle.textContent = data.description.title;
-
-        // Configura o texto com link para "Auclan Design"
-        if (data.description.text.includes('Auclan Design')) {
-            const link = document.createElement('a');
-            link.href = 'https://auclandesign.com/';
-            link.textContent = 'Auclan Design';
-            link.target = '_blank';
-            link.style.textDecoration = 'underline';
-            link.style.fontStyle = 'italic';
-            link.style.color = '#623AF7';
-            link.classList.add('auclan-link');
-
-            const textParts = data.description.text.split('Auclan Design');
-            descriptionText.innerHTML = `${textParts[0]}${link.outerHTML}${textParts[1]}`;
-        } else {
-            descriptionText.textContent = data.description.text;
-        }
-
-        // Configura o botão com o link do projeto
-        button.textContent = data.description.buttonText;
-        button.className = 'btn-grad'; // Corrige a classe (remove o ponto)
-        button.addEventListener('click', () => {
-            window.open(data.description.link, '_blank'); // Abre o link em nova aba
-        });
-
-        return newCard;
-    }
-
-    // Configura o botão do card original (template)
-    const originalButton = templateCard.querySelector('.proj-card__description button');
-    if (originalButton) {
-        originalButton.className = 'btn-grad'; // Corrige a classe
-        originalButton.addEventListener('click', () => {
-            window.open(cardData[3].description.link, '_blank'); // Link do AutodataF (último item)
-        });
-    }
-
-    // Limpa o contêiner para evitar duplicatas
-    wrapperCards.innerHTML = '';
-
-    // Cria um card para cada item no array
-    cardData.forEach(data => {
-        const newCard = createCard(data);
-        wrapperCards.appendChild(newCard);
-    });
-}); */
-
-
 
 //////////////////////////////////////////////////////////////////
 // Animação para o link "View all ~~>"
@@ -660,4 +517,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Carrega o primeiro projeto
     updateCard();
+});
+
+
+//////////////// MENU MOBILE
+document.querySelector('.float-nav').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('active');
+    document.querySelector('.menu-btn').classList.toggle('active');
 });

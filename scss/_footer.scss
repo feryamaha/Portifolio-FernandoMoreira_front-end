@@ -21,6 +21,7 @@ footer {
             justify-content: space-between;
             align-items: flex-start;
 
+
             .logo-footer {
                 width: 300px;
                 height: 46px;
@@ -35,6 +36,7 @@ footer {
                 img {
                     width: 180px;
                 }
+
             }
 
             .social-footer {
@@ -50,6 +52,166 @@ footer {
                         transform: translateY(-3px);
                     }
                 }
+
+
+            }
+
+
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 780px) {
+    footer {
+        display: none;
+    }
+}
+
+
+/* MENU  MOBILE */
+.float-nav {
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    height: 60px;
+    width: 60px;
+    outline: dashed 1px $color-primary;
+    background: $background-cards;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    >a.menu-btn {
+        text-decoration: none;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* background-color: $color-primary; */
+        color: white;
+        width: 60px;
+        height: 60px;
+        padding: 5%;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        border-radius: 5px;
+
+        &.active {
+            transition: background-color 250ms linear;
+            background-color: transparent;
+            box-shadow: none;
+
+            >ul>li.line {
+
+                &:nth-child(1) {
+                    border-width: 4px;
+                    transform: rotate(45deg) translate(4px, 6px);
+                }
+
+                &:nth-child(2) {
+                    visibility: hidden;
+                }
+
+                &:nth-child(3) {
+                    border-width: 4px;
+                    transform: rotate(-45deg) translate(8px, -10px);
+                }
+            }
+        }
+
+        >ul {
+            list-style: none;
+            margin: 0;
+            height: max-content;
+            margin-top: 10px;
+
+            >li.line {
+
+                height: max-content;
+                border: 3px solid #ff0841;
+                width: 80%;
+                transition-duration: 0.1s;
+                margin: 0 auto;
+            }
+        }
+
+        >.menu-txt {
+            height: max-content;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-family: "Modern DOS", monospace;
+            color: $color-primary;
+        }
+    }
+
+    transition: all 0.8s ease-in-out;
+}
+
+.float-nav:hover {
+    transform: translateY(-3px);
+}
+
+.main-nav {
+
+    height: max-content;
+    display: none;
+    opacity: 0;
+    font-family: "Modern DOS", monospace;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: opacity 250ms;
+    outline: dashed 1px $color-primary;
+    background: $background-cards;
+    border-radius: 5px;
+
+    .header__logo {
+        /* background: $background-cards; */
+        margin: 2% 0;
+        padding: 5%;
+        border-radius: 5px;
+    }
+
+    &.active {
+        display: block;
+        opacity: 1;
+        transition: opacity 250ms;
+    }
+
+    >ul {
+        height: max-content;
+        width: 100%;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: $background-cards;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        border-radius: 3px 3px 33.5px 3px;
+
+        >li>a {
+            text-decoration: none;
+            display: block;
+            font-weight: 200;
+            padding: 18px 80px 18px 18px;
+            color: white;
+            font-family: "Modern DOS", monospace;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+
+            &:hover {
+                font-weight: 400;
             }
         }
     }

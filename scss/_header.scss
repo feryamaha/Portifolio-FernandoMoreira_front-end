@@ -5,17 +5,14 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background: $background;
     padding-top: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
 
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1%;
-
     }
 
     &__logo {
@@ -67,6 +64,10 @@
 
 @media screen and (max-width: 1440px) {
     .header {
+
+        &__logo {
+            padding-left: 30px;
+        }
 
         .wrapper-social {
             top: -100px;
